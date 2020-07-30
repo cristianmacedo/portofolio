@@ -66,7 +66,7 @@ var Terminal = Terminal || function(cmdContainer, cmdLineContainer, outputContai
       },
       whoami: {
         cb: function(e, args) {
-          return ["<b style='font-size: 60px'> my name is cristian macedo, i'm 20 years old. i'm a web developer located in brazil, computer science enthusiast, passionate by technology and i create beutiful websites :) </b>"]
+          return ["<b style='font-size: 60px'> my name is cristian macedo, i'm 20 years old. i'm a web developer located in brazil, computer science enthusiast, passionate by technology and i create beautiful websites :) </b>"]
         },
         help: "whoami ----------- echo info about cristian macedo."
       },
