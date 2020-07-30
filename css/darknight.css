@@ -130,8 +130,8 @@ img {
     animation: glitch-box 2s steps(100) infinite;
 }
 
-body, .section {
+.section {
     background-image: url('/img/glitch.gif');
-    background-size: contain;
+    background-size: cover;
     background-repeat: repeat-y;
 }
