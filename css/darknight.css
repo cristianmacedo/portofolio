@@ -1,0 +1,137 @@
+
+@keyframes glitch {
+    0% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    4% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    5% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    10% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    11% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    15% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    16% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    20% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    21% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+    30% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+    31% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+    40% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+    41% {text-shadow: 50px 0 0 blue, -50px 0 0 lime;}
+    42% {text-shadow: 0 0 0 blue, 0 0 0 lime;}
+    43% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    46% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    47% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    50% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    51% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    55% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    56% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    60% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    61% {text-shadow: 30px 0 0 red, -30px 0 0 lime;}
+    62% {text-shadow: 0 0 0 red, 0 0 0 lime;}
+    63% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;}
+    66% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;}
+    67% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    70% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    71% {text-shadow: 70px 0 0 red, -70px 0 0 blue;}
+    72% {text-shadow: 0 0 0 red, 0 0 0 blue;}
+    73% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    76% {text-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    77% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    80% {text-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    81% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    85% {text-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    86% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    90% {text-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    91% {text-shadow: 60px 0 0 lime, -60px 0 0 blue;}
+    92% {text-shadow: 0 0 0 lime, 0 0 0 blue;}
+    92% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+    95% {text-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+    96% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+    99% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+    100% {text-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+  }
+
+  @keyframes glitch-box {
+    0% {box-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    4% {box-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    5% {box-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    10% {box-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    11% {box-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    15% {box-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    16% {box-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    20% {box-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    21% {box-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+    30% {box-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+    31% {box-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+    40% {box-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+    41% {box-shadow: 50px 0 0 blue, -50px 0 0 lime;}
+    42% {box-shadow: 0 0 0 blue, 0 0 0 lime;}
+    43% {box-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    46% {box-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    47% {box-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    50% {box-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    51% {box-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    55% {box-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    56% {box-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    60% {box-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    61% {box-shadow: 30px 0 0 red, -30px 0 0 lime;}
+    62% {box-shadow: 0 0 0 red, 0 0 0 lime;}
+    63% {box-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;}
+    66% {box-shadow: 0.5px 0 0 red, -0.5px 0 0 blue;}
+    67% {box-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    70% {box-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    71% {box-shadow: 70px 0 0 red, -70px 0 0 blue;}
+    72% {box-shadow: 0 0 0 red, 0 0 0 blue;}
+    73% {box-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    76% {box-shadow: 1px 0 0 red, -1px 0 0 blue;}
+    77% {box-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    80% {box-shadow: -1px 0 0 red, 1px 0 0 blue;}
+    81% {box-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    85% {box-shadow: 0.5px 0 0 red, -0.5px 0 0 lime;}
+    86% {box-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    90% {box-shadow: -1px 0 0 red, 1px 0 0 lime;}
+    91% {box-shadow: 60px 0 0 lime, -60px 0 0 blue;}
+    92% {box-shadow: 0 0 0 lime, 0 0 0 blue;}
+    92% {box-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+    95% {box-shadow: 0.7px 0 0 blue, -0.7px 0 0 lime;}
+    96% {box-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+    99% {box-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+    100% {box-shadow: -1px 0 0 blue, 1px 0 0 lime;}
+  }
+
+@keyframes flick {
+    0.0%{
+        transform: scale(1);
+    }
+    19%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.1);
+    }
+    21%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1);
+    }
+    51%{
+        transform: scale(1.2) translate(-10px);
+    }
+    52%{
+        transform: scale(0.9) translate(-10px, -20px);
+    }
+    53%{
+        transform: scale(1) translate(0);
+    }
+}
+
+
+* {
+    animation: glitch 2s steps(100) infinite;
+}
+img {
+    animation: glitch-box 2s steps(100) infinite;
+}
+
+body, .section {
+    background-image: url('/img/glitch.gif');
+    background-size: contain;
+    background-repeat: repeat-y;
+}
