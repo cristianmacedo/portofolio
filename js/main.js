@@ -118,5 +118,30 @@ window.onload = async function() {
     e.keyCode = 13
     document.querySelector('.terminal-cmdline').dispatchEvent(e)
 
+
+    // let ctx = document.querySelector('#skills-chart')
+    // var myRadarChart = new Chart(ctx, {
+    //     type: 'radar',
+    //     data: {
+    //         labels: ['Javascript', 'jQuery', 'NodeJS', 'VueJS'],
+    //         datasets: [{
+    //             borderColor: 'rgb(255, 255, 255)',
+    //             backgroundColor: 'rgb(255, 255, 255)',
+    //             data: [20, 20, 20, 20]
+    //         }]
+    //     },
+    //     options: {
+    //         scale: {
+    //             angleLines: {
+    //                 display: false
+    //             },
+    //             ticks: {
+    //                 suggestedMin: 50,
+    //                 suggestedMax: 20
+    //             }
+    //         }
+    //     }
+    // });
+
 }
 
