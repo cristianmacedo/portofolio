@@ -10,13 +10,18 @@ var Terminal =
             cmds: {
                 cd: {
                     cb: function (e, args) {
-                        console.log(args);
                         if (lib_.bin.dir.includes(args[0])) {
                             window.open(`${args[0]}`, "_self");
                             e.value = "";
+                            // return [``];
                         } else {
                             return [`directory ${args[0]} not found`];
                         }
+                    },
+                },
+                wtf: {
+                    cb: function (e, args) {
+                        return ["wtf?"];
                     },
                 },
                 ls: {
@@ -76,8 +81,14 @@ var Terminal =
                             .getElementsByTagName("head")[0]
                             .insertAdjacentHTML(
                                 "beforeend",
-                                '<link rel="stylesheet" type="text/css" href="/css/darknight.css">'
+                                '<link rel="stylesheet" type="text/css" href="./css/darknight.css">'
                             );
+                        // var script = document.createElement("script");
+                        // script.type = "text/javascript";
+                        // script.src = "./js/darknight.js";
+                        // document
+                        //     .getElementsByTagName("head")[0]
+                        //     .appendChild(script);
                         return ["get out"];
                     },
                 },
@@ -125,6 +136,7 @@ var Terminal =
         cmdLine_.addEventListener("click", inputTextClick_, false);
         cmdLine_.addEventListener("keydown", historyHandler_, false);
         cmdLine_.addEventListener("keydown", processNewCommand_, false);
+        cmdLine_.addEventListener("keydown", cdAutoComplete_, false);
 
         function validateArgs_(args) {
             return (
@@ -135,6 +147,21 @@ var Terminal =
         //
         function inputTextClick_(e) {
             this.value = this.value;
+        }
+
+        //
+        function cdAutoComplete_(e) {
+            if (e.keyCode == 9) {
+                const input = cmdLine_.value.split(" ");
+                if (input[0] == "cd" && input[1]) {
+                    const found = lib_.bin.dir.filter((dir) =>
+                        dir.startsWith(input[1])
+                    );
+                    if (found.length == 1) {
+                        cmdLine_.value = `${input[0]} ${found[0]}`;
+                    }
+                }
+            }
         }
 
         //
@@ -209,8 +236,11 @@ var Terminal =
 
                 if (validateArgs_(args)) {
                     if (lib_.cmds.hasOwnProperty(cmd)) {
-                        for (const msg of lib_.cmds[cmd].cb(this, args)) {
-                            if (msg) output(msg);
+                        const response = lib_.cmds[cmd].cb(this, args);
+                        if (response) {
+                            for (const msg of response) {
+                                if (msg) output(msg);
+                            }
                         }
                     } else {
                         output(cmd + ": command not found");
@@ -219,7 +249,8 @@ var Terminal =
                     output(["trying to xss me huh?... muahahaha"]);
                 }
 
-                cmdContainer_.scrollTo(0, cmdContainer_.scrollHeight);
+                if (cmd !== "cd")
+                    cmdContainer_.scrollTo(0, cmdContainer_.scrollHeight);
                 this.value = ""; // Clear/setup line for next input.
             }
         }

@@ -1,5 +1,5 @@
 imgs = window.document.querySelectorAll("img");
-dk = "/img/darknight.jpg";
+dk = "./img/darknight.jpg";
 
 setInterval(async () => {
     for (const img of imgs) {
