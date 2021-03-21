@@ -118,6 +118,11 @@ a:hover {
     text-align: center;
 }
 
+.navbar-link {
+    font-size: 0.5em;
+    float: right;
+}
+
 .arrow-forward {
     font-family: var(--plex-sans);
     font-weight: 700;
@@ -158,6 +163,11 @@ a:hover {
 
 .section:nth-child(4) {
     background-color: var(--mandarin);
+}
+
+.section:nth-child(5) {
+    background-color: var(--platinum);
+    color: var(--eerie-black);
 }
 
 .section-grid-1 {
@@ -239,7 +249,8 @@ a:hover {
 
 #skills,
 #jobs,
-#projects {
+#projects,
+#contact {
     min-height: 60vh;
 }
 
@@ -336,7 +347,7 @@ a:hover {
 }
 
 .whoami-text {
-    font-size: 4.3vh;
+    font-size: 3vh;
 }
 
 /* SCROLLBAR */
@@ -365,6 +376,40 @@ a:hover {
     background: rgba(35, 100, 170, 0.4);
 }
 
+/* SKILLS */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+}
+
+.skills-heading {
+    margin: 2em 0 0.5em 0;
+    color: hsl(219deg 71% 73%);
+}
+
+.skills-separator {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.skills-item {
+    min-width: 5em;
+    padding: 1em;
+    background-color: var(--darker-cornflower-blue);
+    margin: 1em;
+}
+
+.skills-item i {
+    display: block;
+    font-size: 2em;
+    color: var(--mandarin);
+    margin-bottom: 0.5em;
+}
+
 /* PROGRESS BAR */
 
 .progress-bar {
@@ -387,6 +432,65 @@ a:hover {
     right: 50%;
     top: 50%;
     transform: translate(10px, -10px);
+}
+
+/* CONTACT FORM */
+
+.contact-form {
+    background-color: white;
+    padding: 2em;
+}
+
+.contact-form-label,
+.contact-form-input,
+.contact-form-textarea,
+contact-form-submit {
+    resize: none;
+    display: block;
+    width: 100%;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+    border: 1px solid #242424;
+    margin-bottom: 2em;
+    background-color: var(--platinum);
+    padding: 0.5em;
+}
+
+.contact-form-textarea {
+    height: auto;
+}
+
+.contact-form-label {
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+}
+
+.contact-form-submit {
+    font-family: inherit;
+    margin-right: 0;
+    padding: 0.5em;
+    background-color: var(--mandarin);
+    border: 1px solid #242424;
+    color: white;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.contact-heading {
+    padding-bottom: 1em;
+}
+
+.contact-text {
+    padding-bottom: 1em;
+}
+
+.contact-button {
+    display: block;
+    margin-bottom: 1em;
+    color: var(--dark-cornflower-blue);
 }
 
 /* #css .progress-status{
@@ -453,10 +557,16 @@ a:hover {
 
     .section {
         grid-template-columns: 1fr 14fr 1fr;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .section-title {
         font-size: 40px;
+    }
+
+    .section-grid-2 {
+        grid-template-columns: 1fr;
     }
 
     .navbar {

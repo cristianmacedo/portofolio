@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Cristian Macedo - Home</title>
 
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+        />
+
         <!-- BOOTSTRAP -->
         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -24,11 +31,9 @@
                 </div>
                 <div></div>
                 <div class="navbar-item">
-                    <a class="navbar-link" href="/"> links </a>
-                    |
-                    <a class="navbar-link" href="/"> projects </a>
-                    |
-                    <a class="navbar-link" href="/"> contact </a>
+                    <a class="navbar-link" href="#">
+                        naah, there is no nav links
+                    </a>
                 </div>
             </nav>
         </header>
@@ -74,6 +79,15 @@
                         </div>
                     </div>
                     <div class="scroll-indicator">
+                        <p
+                            style="
+                                position: absolute;
+                                left: 50%;
+                                transform: translate(-50%, -30px);
+                            "
+                        >
+                            see my work
+                        </p>
                         <div class="mouse">
                             <div class="scroller"></div>
                         </div>
@@ -85,7 +99,62 @@
             <section class="section" id="skills">
                 <div></div>
                 <div>
-                    <!-- <canvas id="skills-chart" width="100" height="100"></canvas> -->
+                    <div class="section-title">
+                        <span class="typewriter">skills</span
+                        ><span class="cursor">|</span>
+                    </div>
+                    <div class="skills-container">
+                        <div>
+                            <h3 class="skills-heading">front_end</h3>
+                            <div class="skills-separator">
+                                <div class="skills-item">
+                                    <i class="fab fa-react"></i> React
+                                </div>
+                                <div class="skills-item">
+                                    <i class="fab fa-vuejs"></i> VueJS
+                                </div>
+                                <div class="skills-item">
+                                    <i class="fab fa-sass"></i> SASS
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="skills-heading">back_end</h3>
+                            <div class="skills-separator">
+                                <div class="skills-item">
+                                    <i class="fab fa-node-js"></i> NodeJS
+                                </div>
+                                <div class="skills-item">
+                                    <i class="fas fa-database"></i> MongoDB
+                                </div>
+                                <div class="skills-item">
+                                    <i class="fab fa-python"></i> Python
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="skills-heading">tools</h3>
+                            <div class="skills-separator">
+                                <div class="skills-item">
+                                    <i class="fas fa-camera"></i> Photoshop
+                                </div>
+                                <div class="skills-item">
+                                    <i class="fas fa-paint-brush"></i>
+                                    Illustrator
+                                </div>
+                                <div class="skills-item">
+                                    <i class="fab fa-github"></i> Github
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+            </section>
+
+            <!-- <section class="section" id="skills">
+                <div></div>
+                <div>
                     <div class="section-title">
                         <span class="typewriter">skills</span
                         ><span class="cursor">|</span>
@@ -150,7 +219,7 @@
                     </div>
                 </div>
                 <div></div>
-            </section>
+            </section> -->
 
             <section class="section" id="projects">
                 <div></div>
@@ -290,6 +359,102 @@
                                     guidelines (Northstar Standards)
                                 </p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="contact">
+                <div></div>
+                <div>
+                    <div class="section-title">
+                        <span class="typewriter">contact</span
+                        ><span class="cursor">|</span>
+                    </div>
+                    <div class="section-grid-2">
+                        <div class="">
+                            <h3 class="contact-heading">Send me a message</h3>
+                            <p class="contact-text">
+                                Sent me an email message and I will reply you as
+                                soon as possible.
+                            </p>
+                            <p class="contact-text">
+                                Also, feel free to reach me out on social media.
+                            </p>
+
+                            <h3
+                                class="contact-heading"
+                                style="margin-top: 1.5em"
+                            >
+                                Social media
+                            </h3>
+                            <p class="contact-text">
+                                <a
+                                    class="contact-button"
+                                    href="https://www.linkedin.com/in/cristian-macedo/"
+                                    target="_blank"
+                                    ><i class="fab fa-linkedin"></i> LinkedIn</a
+                                >
+                                <a
+                                    class="contact-button"
+                                    href="https://www.instagram.com/cristiansmacedo"
+                                    target="_blank"
+                                    ><i class="fab fa-instagram"></i>
+                                    Instagram</a
+                                >
+                                <a
+                                    class="contact-button"
+                                    href="https://www.facebook.com/cristian.silva.dk/"
+                                    target="_blank"
+                                    ><i class="fab fa-facebook"></i> Facebook</a
+                                >
+                            </p>
+                        </div>
+                        <div class="">
+                            <form
+                                action="https://formspree.io/f/xayawnob"
+                                method="POST"
+                                class="contact-form"
+                            >
+                                <label class="contact-form-label" for="name">
+                                    Your name:</label
+                                >
+                                <input
+                                    class="contact-form-input"
+                                    name="name"
+                                    type="name"
+                                    name="_replyto"
+                                    placeholder="John Doe"
+                                />
+
+                                <label class="contact-form-label" for="email">
+                                    Your email:</label
+                                >
+                                <input
+                                    class="contact-form-input"
+                                    name="email"
+                                    type="email"
+                                    name="_replyto"
+                                    placeholder="john.doe@doemain.com"
+                                />
+
+                                <label class="contact-form-label" for="message"
+                                    >Your message:</label
+                                >
+                                <textarea
+                                    class="contact-form-textarea"
+                                    name="message"
+                                    rows="10"
+                                    placeholder="Tell me"
+                                ></textarea>
+
+                                <button
+                                    class="contact-form-submit"
+                                    type="submit"
+                                >
+                                    Send message
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
