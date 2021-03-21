@@ -92,14 +92,7 @@ var Terminal =
                 },
             },
             bin: {
-                dir: [
-                    "/contact",
-                    "/projects",
-                    "/links",
-                    "#skills",
-                    "#projects",
-                    "#jobs",
-                ],
+                dir: ["#skills", "#projects", "#jobs", "#contact"],
             },
         };
 
@@ -226,7 +219,7 @@ var Terminal =
                     output(["trying to xss me huh?... muahahaha"]);
                 }
 
-                // window.scrollTo(0, getDocHeight_());
+                cmdContainer_.scrollTo(0, cmdContainer_.scrollHeight);
                 this.value = ""; // Clear/setup line for next input.
             }
         }
