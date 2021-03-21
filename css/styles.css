@@ -347,7 +347,7 @@ a:hover {
 }
 
 .whoami-text {
-    font-size: 3vh;
+    font-size: 2.9vw;
 }
 
 /* SCROLLBAR */
@@ -358,22 +358,23 @@ a:hover {
 
 /* SCROLLBAR-TRACK */
 ::-webkit-scrollbar-track {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+    background: var(--eerie-black);
 }
 
 /* SCROLLBAR-HANDLE */
 ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    border: 1px solid #242424;
-    background: rgba(35, 100, 170, 0.8);
+    /* -webkit-border-radius: 10px; */
+    /* border-radius: 10px; */
+    /* border: 1px solid #242424; */
+    border: none;
+    /* background: rgba(35, 100, 170, 0.8); */
+    background: var(--mandarin);
 
     /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);  */
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(35, 100, 170, 0.4);
+    background: var(--dark-cornflower-blue);
 }
 
 /* SKILLS */
@@ -452,7 +453,7 @@ contact-form-submit {
 
 .contact-form-input,
 .contact-form-textarea {
-    border: 1px solid #242424;
+    border: 1px solid #a3a3a3;
     margin-bottom: 2em;
     background-color: var(--platinum);
     padding: 0.5em;
@@ -469,18 +470,21 @@ contact-form-submit {
 
 .contact-form-submit {
     font-family: inherit;
+    cursor: pointer;
     margin-right: 0;
     padding: 0.5em;
     background-color: var(--mandarin);
-    border: 1px solid #242424;
+    border: none;
     color: white;
     width: 100%;
     font-size: 1.1em;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .contact-heading {
     padding-bottom: 1em;
+    font-size: 1.2em;
 }
 
 .contact-text {
@@ -491,6 +495,7 @@ contact-form-submit {
     display: block;
     margin-bottom: 1em;
     color: var(--dark-cornflower-blue);
+    font-weight: bold;
 }
 
 /* #css .progress-status{
@@ -540,9 +545,9 @@ contact-form-submit {
         grid-template-columns: 4fr 6fr 4fr;
     }
 
-    .section {
+    /* .section {
         grid-template-columns: 1fr 16fr 1fr;
-    }
+    } */
 
     .section-title {
         font-size: 50px;
@@ -556,7 +561,7 @@ contact-form-submit {
     }
 
     .section {
-        grid-template-columns: 1fr 14fr 1fr;
+        /* grid-template-columns: 1fr 14fr 1fr; */
         padding-left: 0;
         padding-right: 0;
     }
@@ -575,5 +580,11 @@ contact-form-submit {
 
     #terminal {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section {
+        grid-template-columns: 1fr 64fr 1fr;
     }
 }
