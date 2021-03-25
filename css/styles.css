@@ -491,11 +491,19 @@ contact-form-submit {
     padding-bottom: 1em;
 }
 
+.contact-social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 .contact-button {
     display: block;
-    margin-bottom: 1em;
-    color: var(--dark-cornflower-blue);
     font-weight: bold;
+    color: white;
+    background-color: var(--dark-cornflower-blue);
+    /* width: fit-content; */
+    margin: 0 0.5em 0.5em 0;
+    padding: 1em;
 }
 
 /* #css .progress-status{
