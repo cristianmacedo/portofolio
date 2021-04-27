@@ -70,7 +70,7 @@ var Terminal =
                 whoami: {
                     cb: function (e, args) {
                         return [
-                            "<b class='whoami-text'> my name is cristian macedo, i'm 20 years old. i'm a web developer located in brazil, computer science enthusiast, passionate by technology and i create beautiful websites :) </b>",
+                            "<b class='whoami-text'> my name is cristian macedo, i am a web developer located in brazil, computer science enthusiast, hooked to clean and well documented code, and i create beautiful websites :) </b>",
                         ];
                     },
                     help: "whoami ----------- echo info about cristian macedo.",
