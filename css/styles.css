@@ -42,7 +42,7 @@
     --platinum: hsl(220, 7%, 92%, 1);
     --medium-slate-blue: hsla(242, 100%, 76%, 1);
 
-    --lg-grid: 1fr 10fr 1fr;
+    --lg-grid: 2fr 10fr 2fr;
 }
 
 * {
@@ -211,6 +211,10 @@ a:hover {
 .badge-primary {
     color: #fff;
     background-color: var(--mandarin);
+}
+
+.project-badges {
+    margin-bottom: 1em;
 }
 
 .job,
@@ -626,6 +630,14 @@ contact-form-submit {
 }
 
 @media screen and (max-width: 480px) {
+    .hide-sm {
+        display: none;
+    }
+
+    .navbar {
+        grid-template-columns: 1fr 0fr 0fr;
+    }
+
     .section {
         grid-template-columns: 1fr 64fr 1fr;
     }
