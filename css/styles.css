@@ -42,7 +42,7 @@
     --platinum: hsl(220, 7%, 92%, 1);
     --medium-slate-blue: hsla(242, 100%, 76%, 1);
 
-    --lg-grid: 2fr 10fr 2fr;
+    --lg-grid: 1fr 10fr 1fr;
 }
 
 * {
@@ -194,6 +194,23 @@ a:hover {
     padding-bottom: 1em;
     font-size: 70px;
     text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+
+.badge-primary {
+    color: #fff;
+    background-color: var(--mandarin);
 }
 
 .job,
