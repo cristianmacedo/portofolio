@@ -131,7 +131,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.arrow-forward {
+.corner-link {
     font-family: var(--plex-sans);
     font-weight: 700;
     font-size: large;
@@ -141,6 +141,10 @@ a:hover {
 
     bottom: 1em;
     right: 1em;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 .container {
